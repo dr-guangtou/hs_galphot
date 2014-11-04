@@ -1,0 +1,43 @@
+IMAGEOUT_NAME          coadd.fits      # Output filename
+WEIGHTOUT_NAME       coadd.weight.fits # Output weight-map filename
+HEADER_ONLY            N               # Only a header as an output file (Y/N)?
+WEIGHT_TYPE            NONE            # BACKGROUND,MAP_RMS,MAP_VARIANCE
+WEIGHT_SUFFIX          weight.fits                # Suffix to use for weight-maps
+WEIGHT_IMAGE                           # Weightmap filename if suffix not used
+COMBINE                Y               # Combine resampled images (Y/N)?
+COMBINE_TYPE           MEDIAN          # MEDIAN,AVERAGE,MIN,MAX,WEIGHTED,CHI2
+COMBINE_BUFSIZE        1024            # Buffer size for combine (MB)
+CELESTIAL_TYPE         NATIVE          # NATIVE, PIXEL, EQUATORIAL,
+PROJECTION_TYPE        TAN             # Any WCS projection code or NONE
+PROJECTION_ERR         0.001           # Maximum projection error (in output
+CENTER_TYPE            MANUAL          # MANUAL, ALL or MOST
+CENTER                 18.88  -0.86    # Coordinates of the image center
+PIXELSCALE_TYPE        MANUAL          # MANUAL,FIT,MIN,MAX or MEDIAN
+PIXEL_SCALE            0.396           # Pixel scale
+IMAGE_SIZE             1200,1200       # Image size (0 = AUTOMATIC)
+RESAMPLE               Y               # Resample input images (Y/N)?
+RESAMPLE_DIR           .               # Directory path for resampled images
+RESAMPLE_SUFFIX        .resamp.fits    # filename extension for resampled images
+RESAMPLING_TYPE        LANCZOS3        # NEAREST,BILINEAR,LANCZOS2,LANCZOS3
+OVERSAMPLING           0               # Oversampling in each dimension
+INTERPOLATE            N               # Interpolate bad input pixels (Y/N)?
+FSCALASTRO_TYPE        FIXED           # NONE,FIXED, or VARIABLE
+FSCALE_KEYWORD         FLXSCALE        # FITS keyword for the multiplicative
+FSCALE_DEFAULT         1.0             # Default FSCALE value if not in header
+GAIN_KEYWORD           GAIN            # FITS keyword for effect. gain (e-/ADU)
+GAIN_DEFAULT           0.0             # Default gain if no FITS keyword found
+SUBTRACT_BACK          N               # Subtraction sky background (Y/N)?
+BACK_TYPE              AUTO            # AUTO or MANUAL
+BACK_DEFAULT           0.0             # Default background value in MANUAL
+BACK_SIZE              128             # Background mesh size (pixels)
+BACK_FILTERSIZE        3               # Background map filter range (meshes)
+VMEM_DIR               .               # Directory path for swap files
+VMEM_MAX               2047            # Maximum amount of virtual memory (MB)
+MEM_MAX                2048            # Maximum amount of usable RAM (MB)
+DELETE_TMPFILES        Y               # Delete temporary resampled FITS files
+COPY_KEYWORDS          OBJECT          # List of FITS keywords to propagate
+WRITE_FILEINFO         Y               # Write information about each input
+WRITE_XML              N               # Write XML file (Y/N)?
+XML_NAME               swarp.xml       # Filename for XML output
+VERBOSE_TYPE           NORMAL            # QUIET,NORMAL or FULL
+NTHREADS               0               # Number of simultaneous threads for

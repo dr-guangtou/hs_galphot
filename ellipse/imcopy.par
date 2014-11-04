@@ -1,0 +1,3 @@
+imcopy.input = "/media/Elements/cings/NGC636/R/NGC636_R_mm.fits"
+imcopy.output = "/media/Elements/cings/NGC636/R/NGC636_R_color_30_bs0_mod.pl"
+imcopy.verbose = yes

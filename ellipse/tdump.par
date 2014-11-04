@@ -1,0 +1,9 @@
+tdump.table = "2322_can_1_mnp.bin"
+tdump.cdfile = "STDOUT"
+tdump.pfile = "STDOUT"
+tdump.datafile = "STDOUT"
+tdump.columns = ""
+tdump.rows = "-"
+tdump.pwidth = -1
+tdump.mode = "al"
+# EOF
