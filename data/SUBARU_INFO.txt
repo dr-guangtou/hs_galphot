@@ -1,0 +1,107 @@
+===========================================================================
+COSMOS Subaru Data                                              Version 2.0
+===========================================================================
+
+The Cosmic Evolution Survey (COSMOS) is an HST Treasury Project to survey
+a 2 square degree equatorial field, centered on RA=10:00:28.6 and
+DEC=+02:12:21.0, using the ACS camera. The project also incorporates major
+commitments from other observatories around the world, including the VLA
+radio telescope, ESO's VLT in Chile, ESA's XMM X-ray satellite, and the
+Japanese 8-meter Subaru telescope in Hawaii.
+
+These data are imaging taken on the Subaru 8.3m telescope in Bj, Vj, g+,
+i+, r+, and z+ bands.  [The original combined observations are in the
+"original_psf" directory.]  The data under the "matched_psf" directory
+are psf homogenized.  The "best_psf" directory includes only those frames
+with exceptional seeing.  
+
+The filter transmission profiles are included in files named 
+SUBARU_filter_N.txt, where "N" is the name of the filter.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+October 2008 WARNING:
+
+The COSOMOS Subaru FITS images in the directory subaru/matched_psf/ip/*fits
+contain FITS-compliant problems.  We are aware of these issues and are
+working on fixing them for the next release.
+
+Most of the COSOMOS Subaru flats FITS file images subaru/flats/*/*fits
+do not contain a complete World Coordinate System (WCS) in the header
+and therefore are not available in the positional search results nor
+Cutout image results.  We are also working on this issue for the next
+release.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Please note that the i+ band data have extreamly good seeing and long 
+integration times.  As a result some compact objects saturate at 
+magnitude 21.5. 
+
+We are uncertain of the filter profile for the Bv band and are 
+investigating a possible red leak or shift in the blue cutoff of this 
+filter with the Subaru Staff.  As a result of this uncertainty, the 
+zero point could be as much as -0.3 mag brighter than the number given 
+here.
+
+The key characteristics of these data are:
+
+Telescope:		Subaru 8.3m Telescope
+Instrument:		Suprime-Cam
+Integration time:	1.2h per pointing 10.4h total (Bj)
+                        0.9h per pointing 8.0h total (Vj)
+                        1.0h per pointing 9.1h total (g+)
+                        0.8h per pointing 7.5h total (i+)
+                        0.6h per pointing 5.8h total (r+)
+                        1.2h per pointing 10.8h total (z+)
+Effective Wavelength:	446.0nm (Bj)
+                        548.4nm (Vj)
+                        478.0nm (g+)
+                        764.1nm (i+)
+                        629.5nm (r+)
+                        903.7nm (z+)
+Filter Width:		 89.7nm (Bj)
+                         94.6nm (Vj)
+                        126.5nm (g+)
+                        149.7nm (i+)
+                        138.2nm (r+)
+                         85.6nm (z+)
+Flux unit:		nJy
+Zero Point		31.4
+Area:			~4 sq degrees
+Resolution:		0.15"/pix
+Seeing:			0.95" (Bj)
+                        1.33" (Vj)
+                        1.58" (g+)
+                        0.95" (i+)
+                        1.05" (r+)
+                        1.15" (z+)
+
+PSF Homogenized:	YES
+
+The data products available here include the following at each of
+144 tiled positions:
+
+    1) an image in units of nJy
+    2) a map of the image RMS in units of nJy
+
+A tile diagram is included with the data.
+
+These data were reduced by Peter Capak (capak@astro.caltech.edu) using
+the IMCAT software package. More information on IMCAT can be found at:
+
+    http://www.ifa.hawaii.edu/~kaiser/imcat/
+
+This data was prepared for release by:
+
+Peter Capak (capak@astro.caltech.edu)
+Patrick Shopbell (pls@astro.caltech.edu)
+
+Further information may be obtained from the COSMOS web page:
+
+    http://cosmos.astro.caltech.edu/
+
+===========================================================================
+                        
+                        
+                        
+                        
