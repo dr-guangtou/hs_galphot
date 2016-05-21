@@ -1,0 +1,6 @@
+
+# Component/    parameter   constraint	Comment 
+# operation	(see below)   range 
+1_2_3   x      offset     # Hard constraint
+1_2_3   y      offset     # Hard constraint
+
